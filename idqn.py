@@ -294,8 +294,8 @@ def train_idqn(env, total_steps=300_000, device="cpu",
             
             #logging
             if global_step % 50_000 == 0 and global_step > 0:
-                team0.save(f"D:/University/COMP4900 multiagent reinforcement learning/checkpoints/team0_step{global_step}.pt")
-                team1.save(f"D:/University/COMP4900 multiagent reinforcement learning/checkpoints/team1_step{global_step}.pt")
+                team0.save(f"checkpoints/team0_step{global_step}.pt")
+                team1.save(f"checkpoints/team1_step{global_step}.pt")
 
             obs, info = env.reset()
             last_obs_vecs = [extract_local_obs(obs, i, obs_patch) for i in range(n_agents)]
@@ -304,8 +304,8 @@ def train_idqn(env, total_steps=300_000, device="cpu",
 
     print("Training completed.")
     # save models
-    team0.save("D:/University/COMP4900 multiagent reinforcement learning/checkpoints/team0_idqn.pt")
-    team1.save("D:/University/COMP4900 multiagent reinforcement learning/checkpoints/team1_idqn.pt")
+    team0.save("checkpoints/team0_idqn.pt")
+    team1.save("checkpoints/team1_idqn.pt")
 
     # ---- Plot learning curve ----
     if plot_learning_curve and len(episode_ids) > 0:

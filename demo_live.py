@@ -82,8 +82,8 @@ def play_live(n_episodes=3, H=9, W=9, team_sizes=(2,2), max_steps=120):
     team0 = TeamIDQN(obs_dim, cfg.n_actions, cfg)
     team1 = TeamIDQN(obs_dim, cfg.n_actions, cfg)
 
-    team0.load("D:/University/COMP4900 multiagent reinforcement learning/checkpoints/team0_idqn.pt")
-    team1.load("D:/University/COMP4900 multiagent reinforcement learning/checkpoints/team1_idqn.pt")
+    team0.load("checkpoints/team0_idqn.pt")
+    team1.load("checkpoints/team1_idqn.pt")
 
     teams = obs["teams"]
     n_agents = len(teams)
