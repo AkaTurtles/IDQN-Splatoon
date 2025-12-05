@@ -5,7 +5,7 @@ This project implements a Splatoon-inspired multi-agent reinforcement learning e
 Agents are trained with Independent Deep Q-Networks (IDQN) and evaluated against a rule-based heuristic.
 You can then watch trained agents play live in a Pygame viewer.
 
-Requirements
+1. Requirements
 Python 3.10+
 
 Recommended packages:
@@ -18,6 +18,7 @@ pygame
 Install everything (adjust as needed):
 pip install numpy torch gymnasium matplotlib pygame
 
+2. Project Structure
 Key files:
 splatoon.py
 Gymnasium environment splatoon implementing the grid-based Splatoon-like game (movement, painting, splatting, rewards, rendering).
