@@ -105,11 +105,10 @@ The heuristic agent, via HeuristicController, depending on how you set the logic
 d) Render a few episodes
 play_live() loops over several episodes and calls env.step(actions) + env.render() with a small time.sleep(...) so spectators can watch.
 
-
-6. Quick Start Summary
+5. Quick Start Summary
 Train & generate models
 python testbed.py
-# -> checkpoints/team0_idqn.pt, checkpoints/team1_idqn.pt
+-> checkpoints/team0_idqn.pt, checkpoints/team1_idqn.pt
 
 (Optional) Run quantitative comparison
 python idqn_vs_heuristic.py
