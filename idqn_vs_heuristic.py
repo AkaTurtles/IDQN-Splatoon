@@ -222,8 +222,8 @@ if __name__ == "__main__":
     # 2) Load trained IDQN models
     team0, team1 = load_idqn_teams(
         env,
-        ckpt0_path="D:/University/COMP4900 multiagent reinforcement learning/checkpoints/team0_idqn.pt",
-        ckpt1_path="D:/University/COMP4900 multiagent reinforcement learning/checkpoints/team1_idqn.pt",
+        ckpt0_path="checkpoints/team0_idqn.pt",
+        ckpt1_path="checkpoints/team1_idqn.pt",
         obs_patch=7,
         device="cpu",
     )
